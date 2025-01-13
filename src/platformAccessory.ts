@@ -348,9 +348,7 @@ export class ExamplePlatformAccessory {
     request(
       {
         url: url,
-        body: JSON.stringify({
-          DA: { [this.accessory.context.device.temp_key]: value },
-        }),
+        body: JSON.stringify({ DA: { tempTarget: value } }),
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         timeout: 5000,
