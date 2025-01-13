@@ -53,22 +53,6 @@
             "type": "string",
             "description": "Secret user token of the accessory"
           },
-          "temp_key": {
-            "title": "Temp Field Key",
-            "description": "The field denoting target temp in PATCH or POST requests. Either setPoint or tempTarget",
-            "type": "string",
-            "default": "tempTarget",
-            "oneOf": [
-              {
-                "title": "tempTarget",
-                "enum": ["tempTarget"]
-              },
-              {
-                "title": "setPoint",
-                "enum": ["setPoint"]
-              }
-            ]
-          },
           "zones": {
             "type": "array",
             "title": "Zones",
